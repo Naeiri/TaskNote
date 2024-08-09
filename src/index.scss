@@ -1,0 +1,157 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$BLUE: #3D52A0;
+$RED: #F34E4E;
+$GRAY5: #F2F2F2;
+$GRAY20: #EDEDED;
+$GRAYPURPLE: #E3E0E7;
+$GRAY50: #7F7F7F;
+$GRAY80: #302E31;
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.content {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button, span, input, .form-label, .form-control, .form-select{
+    font-family: "Lexend", sans-serif;
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+p, a, button {
+    font-weight: 400;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+//BUTTON
+.btn-blue-add-custom {
+    color: #fff;
+    background-color: $BLUE;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: 14px;
+
+    &:hover {
+        background-color: darken($BLUE, 10%);
+        color: #fff;
+    }
+}
+
+.btn-blue-custom {
+    color: #fff;
+    background-color: $BLUE;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+
+    &:hover {
+        background-color: darken($BLUE, 10%);
+        color: #fff;
+    }
+}
+
+.btn-blue-outline-custom {
+    color: $BLUE;
+    background-color: #fff;
+    border: 2px solid $BLUE;
+    padding: 10px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $BLUE;
+        color: #fff;
+    }
+}
+
+.btn-red-custom {
+    color: #fff;
+    background-color: $RED;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+
+    &:hover {
+        background-color: darken($RED, 10%);
+        color: #fff;
+    }
+}
+
+.btn-red-label-custom {
+    color: #fff;
+    background-color: $RED;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+
+    &:hover {
+        background-color: darken($RED, 10%);
+        color: #fff;
+    }
+}
+
+//FONT COLOR
+.color-blue-custom {
+    color: $BLUE;
+}
+
+.color-gray-80 {
+    color: $GRAY80;
+}
+
+.color-gray-50 {
+    color: $GRAY50;
+}
+
+.color-gray-20 {
+    color: $GRAY20;
+}
+
+.color-white {
+    color: #fff;
+}
+
+// BACKGROUND COLOR
+.bg-blue-custom {
+    background-color: $BLUE;
+}
+
+.bg-gray-20 {
+    background-color: $GRAY20;
+}
+
+.bg-gray-purple {
+    background-color: $GRAYPURPLE;
+}
+
+.no-bg {
+    background-color: transparent;
+    border: transparent;
+}
+
+//FONT SIZE
+.font-12px {
+    font-size: 12px;
+}
+
+.text-wrap {
+    word-wrap: break-word;
+    overflow: visible;
+}
+
+//WIDTH & HEIGHT
+.width-custom {
+    width: 215px;
+}

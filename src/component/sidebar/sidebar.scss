@@ -1,0 +1,90 @@
+$GRAY5: #F2F2F2;
+$GRAY20: #EDEDED;
+$GRAY80: #302E31;
+$BLUE: #3D52A0;
+$RED: #F34E4E;
+
+.sidebar {
+    width: 438px;
+    min-height: 100vh;
+    background-color: $GRAY5;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+
+    &.closed {
+        width: 60px;
+        background-color: transparent;
+
+        .header-menu {
+            background-color: transparent;
+            border-radius: 0;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+
+        .layout-sidebar-filled {
+            color: $BLUE;
+        }
+    }
+
+    .header-menu {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 80px;
+    }
+
+    .nav-link {
+        word-wrap: break-word;
+        overflow: visible;
+    }
+
+    .nave {
+        &.active {
+            font-weight: 600;
+            color: $BLUE;
+            background-color: $GRAY20;
+            border-radius: 10px;
+
+            .delete-icon {
+                display: block;
+            }
+        }
+
+        &:hover {
+            color: $BLUE;
+            background-color: $GRAY20;
+            border-radius: 10px;
+        }
+    }
+
+    p {
+        color: $GRAY80;
+    }
+
+    .customTextField {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: transparent;
+        border-radius: 5px;
+        background-color: transparent;
+        outline: none;
+
+        &:focus {
+            border: 2px solid transparent;
+            background-color: transparent;
+            outline: none;
+        }
+    }
+
+    .layout-sidebar-filled {
+        width: 24px;
+        height: 24px;
+    }
+
+    .quantity-custom {
+        border-radius: 100%;
+        padding: 0 0.3rem;
+    }
+}
